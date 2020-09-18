@@ -2,8 +2,6 @@ package cn.datacharm.springboot_fileinputdemo.controller;
 
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import jdk.nashorn.internal.ir.debug.JSONWriter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -53,7 +51,7 @@ public class FileController {
             System.out.println(path);
             dest= new File(path + fileName);
         }else {
-            String path = "/webapps/img/";
+            String path = "/data/upload/";
             dest= new File(path + fileName);
         }
         model.addAttribute("src","img/"+fileName);

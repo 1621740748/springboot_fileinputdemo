@@ -19,7 +19,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
         } else {  //linux 和mac
             registry.addResourceHandler("/img/**")
-                    .addResourceLocations("file:/webapps/img");
+                    .addResourceLocations("/data/upload/");
         }
     }
 
